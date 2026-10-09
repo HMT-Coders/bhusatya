@@ -1,0 +1,16 @@
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+uploads/
+.DS_Store
+.vscode/
+.idea/
