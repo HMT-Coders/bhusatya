@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { ShieldCheck, FileSearch, UploadCloud, AlertTriangle, CheckCircle2, ArrowUpRight, Database, Activity, FileText, Search, ChevronRight, LoaderCircle, Languages, ExternalLink } from 'lucide-react'
 import './styles.css'
 
-const API = (import.meta as any).env.VITE_API_BASE_URL || 'http://localhost:5000/api/v1'
+const API = (import.meta as any).env.VITE_API_BASE_URL || 'https://bhusatya-api.onrender.com/api/v1'
 type Lang = 'hi'|'en'|'mr'|'gu'|'pa'|'bn'|'ta'|'te'|'kn'|'ml'|'or'|'ur'
 type Finding = { finding_id:string; category:string; title:string; severity:string; description:string; evidence:Record<string,any>; page_numbers:number[]; recommended_action:string }
 type Category = { category:string; weight:number; available:boolean; concern_score:number|null; reason_unavailable:string|null }
