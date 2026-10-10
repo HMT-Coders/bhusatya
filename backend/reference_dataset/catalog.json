@@ -1,0 +1,1807 @@
+{
+  "dataset_name": "BhuSatya 50 Synthetic Reference Documents",
+  "version": "1.0.0",
+  "created_for": "MU ANANT 1.0 · MU-PS-004",
+  "notice": "All records and PDF files are fictional synthetic samples. They are not official records and must not be represented as government documents.",
+  "count": 50,
+  "categories": {
+    "clean_baseline": "10",
+    "cross_field_mismatch": "10",
+    "area_discrepancy": "10",
+    "missing_incomplete_fields": "5",
+    "metadata_image_indicators": "5",
+    "mixed_anomalies": "10"
+  },
+  "records": [
+    {
+      "reference_id": "BHUSATYA-REF-001",
+      "filename": "BHUSATYA_REF_001_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_001_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0001",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 01",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 01",
+        "survey_number": "101/2",
+        "khata_number": "DEMO-KH-001",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0001",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 01",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 01",
+        "survey_number": "101/2",
+        "khata_number": "DEMO-KH-001",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-002",
+      "filename": "BHUSATYA_REF_002_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_002_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0002",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 02",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 02",
+        "survey_number": "102/3",
+        "khata_number": "DEMO-KH-002",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0002",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 02",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 02",
+        "survey_number": "102/3",
+        "khata_number": "DEMO-KH-002",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-003",
+      "filename": "BHUSATYA_REF_003_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_003_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0003",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 03",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 03",
+        "survey_number": "103/4",
+        "khata_number": "DEMO-KH-003",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0003",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 03",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 03",
+        "survey_number": "103/4",
+        "khata_number": "DEMO-KH-003",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-004",
+      "filename": "BHUSATYA_REF_004_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_004_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0004",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 04",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 04",
+        "survey_number": "104/1",
+        "khata_number": "DEMO-KH-004",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0004",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 04",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 04",
+        "survey_number": "104/1",
+        "khata_number": "DEMO-KH-004",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-005",
+      "filename": "BHUSATYA_REF_005_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_005_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0005",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 05",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 05",
+        "survey_number": "105/2",
+        "khata_number": "DEMO-KH-005",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0005",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 05",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 05",
+        "survey_number": "105/2",
+        "khata_number": "DEMO-KH-005",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-006",
+      "filename": "BHUSATYA_REF_006_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_006_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0006",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 06",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 06",
+        "survey_number": "106/3",
+        "khata_number": "DEMO-KH-006",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0006",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 06",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 06",
+        "survey_number": "106/3",
+        "khata_number": "DEMO-KH-006",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-007",
+      "filename": "BHUSATYA_REF_007_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_007_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0007",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 07",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 07",
+        "survey_number": "107/4",
+        "khata_number": "DEMO-KH-007",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0007",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 07",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 07",
+        "survey_number": "107/4",
+        "khata_number": "DEMO-KH-007",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-008",
+      "filename": "BHUSATYA_REF_008_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_008_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0008",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 08",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 08",
+        "survey_number": "108/1",
+        "khata_number": "DEMO-KH-008",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0008",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 08",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 08",
+        "survey_number": "108/1",
+        "khata_number": "DEMO-KH-008",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-009",
+      "filename": "BHUSATYA_REF_009_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_009_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0009",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 09",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 09",
+        "survey_number": "109/2",
+        "khata_number": "DEMO-KH-009",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0009",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 09",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 09",
+        "survey_number": "109/2",
+        "khata_number": "DEMO-KH-009",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-010",
+      "filename": "BHUSATYA_REF_010_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_010_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "clean_baseline",
+      "anomaly_labels": [],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0010",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 10",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 10",
+        "survey_number": "110/3",
+        "khata_number": "DEMO-KH-010",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0010",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 10",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 10",
+        "survey_number": "110/3",
+        "khata_number": "DEMO-KH-010",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-011",
+      "filename": "BHUSATYA_REF_011_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_011_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0011",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 11",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 11",
+        "survey_number": "111/4",
+        "khata_number": "DEMO-KH-011",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0011",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 11",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 11",
+        "survey_number": "111/1",
+        "khata_number": "DEMO-KH-011",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-012",
+      "filename": "BHUSATYA_REF_012_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_012_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0012",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 12",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 12",
+        "survey_number": "112/1",
+        "khata_number": "DEMO-KH-012",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0012",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 12",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 12",
+        "survey_number": "112/2",
+        "khata_number": "DEMO-KH-012",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-013",
+      "filename": "BHUSATYA_REF_013_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_013_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0013",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 13",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 13",
+        "survey_number": "113/2",
+        "khata_number": "DEMO-KH-013",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0013",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 13",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 13",
+        "survey_number": "113/3",
+        "khata_number": "DEMO-KH-013",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-014",
+      "filename": "BHUSATYA_REF_014_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_014_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0014",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 14",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 14",
+        "survey_number": "114/3",
+        "khata_number": "DEMO-KH-014",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0014",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 14",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 14",
+        "survey_number": "114/4",
+        "khata_number": "DEMO-KH-014",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-015",
+      "filename": "BHUSATYA_REF_015_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_015_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0015",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 15",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 15",
+        "survey_number": "115/4",
+        "khata_number": "DEMO-KH-015",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0015",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 15",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 15",
+        "survey_number": "115/1",
+        "khata_number": "DEMO-KH-015",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-016",
+      "filename": "BHUSATYA_REF_016_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_016_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0016",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 16",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 16",
+        "survey_number": "116/1",
+        "khata_number": "DEMO-KH-016",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0016",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 16",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 16",
+        "survey_number": "116/2",
+        "khata_number": "DEMO-KH-016",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-017",
+      "filename": "BHUSATYA_REF_017_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_017_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0017",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 17",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 17",
+        "survey_number": "117/2",
+        "khata_number": "DEMO-KH-017",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0017",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 17",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 17",
+        "survey_number": "117/3",
+        "khata_number": "DEMO-KH-017",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-018",
+      "filename": "BHUSATYA_REF_018_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_018_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0018",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 18",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 18",
+        "survey_number": "118/3",
+        "khata_number": "DEMO-KH-018",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0018",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 18",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 18",
+        "survey_number": "118/4",
+        "khata_number": "DEMO-KH-018",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-019",
+      "filename": "BHUSATYA_REF_019_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_019_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0019",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 19",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 19",
+        "survey_number": "119/4",
+        "khata_number": "DEMO-KH-019",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0019",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 19",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 19",
+        "survey_number": "119/1",
+        "khata_number": "DEMO-KH-019",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-020",
+      "filename": "BHUSATYA_REF_020_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_020_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "cross_field_mismatch",
+      "anomaly_labels": [
+        "cross_field_mismatch"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0020",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 20",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 20",
+        "survey_number": "120/1",
+        "khata_number": "DEMO-KH-020",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0020",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 20",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 20",
+        "survey_number": "120/2",
+        "khata_number": "DEMO-KH-020",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-021",
+      "filename": "BHUSATYA_REF_021_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_021_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0021",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 21",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 21",
+        "survey_number": "121/2",
+        "khata_number": "DEMO-KH-021",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0021",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 21",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 21",
+        "survey_number": "121/2",
+        "khata_number": "DEMO-KH-021",
+        "area_hectares": "0.500",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-022",
+      "filename": "BHUSATYA_REF_022_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_022_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0022",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 22",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 22",
+        "survey_number": "122/3",
+        "khata_number": "DEMO-KH-022",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0022",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 22",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 22",
+        "survey_number": "122/3",
+        "khata_number": "DEMO-KH-022",
+        "area_hectares": "0.625",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-023",
+      "filename": "BHUSATYA_REF_023_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_023_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0023",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 23",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 23",
+        "survey_number": "123/4",
+        "khata_number": "DEMO-KH-023",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0023",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 23",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 23",
+        "survey_number": "123/4",
+        "khata_number": "DEMO-KH-023",
+        "area_hectares": "0.825",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-024",
+      "filename": "BHUSATYA_REF_024_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_024_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0024",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 24",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 24",
+        "survey_number": "124/1",
+        "khata_number": "DEMO-KH-024",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0024",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 24",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 24",
+        "survey_number": "124/1",
+        "khata_number": "DEMO-KH-024",
+        "area_hectares": "1.125",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-025",
+      "filename": "BHUSATYA_REF_025_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_025_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0025",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 25",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 25",
+        "survey_number": "125/2",
+        "khata_number": "DEMO-KH-025",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0025",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 25",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 25",
+        "survey_number": "125/2",
+        "khata_number": "DEMO-KH-025",
+        "area_hectares": "1.575",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-026",
+      "filename": "BHUSATYA_REF_026_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_026_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0026",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 26",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 26",
+        "survey_number": "126/3",
+        "khata_number": "DEMO-KH-026",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0026",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 26",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 26",
+        "survey_number": "126/3",
+        "khata_number": "DEMO-KH-026",
+        "area_hectares": "1.875",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-027",
+      "filename": "BHUSATYA_REF_027_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_027_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0027",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 27",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 27",
+        "survey_number": "127/4",
+        "khata_number": "DEMO-KH-027",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0027",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 27",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 27",
+        "survey_number": "127/4",
+        "khata_number": "DEMO-KH-027",
+        "area_hectares": "2.375",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-028",
+      "filename": "BHUSATYA_REF_028_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_028_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0028",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 28",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 28",
+        "survey_number": "128/1",
+        "khata_number": "DEMO-KH-028",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0028",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 28",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 28",
+        "survey_number": "128/1",
+        "khata_number": "DEMO-KH-028",
+        "area_hectares": "3.775",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-029",
+      "filename": "BHUSATYA_REF_029_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_029_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0029",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 29",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 29",
+        "survey_number": "129/2",
+        "khata_number": "DEMO-KH-029",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0029",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 29",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 29",
+        "survey_number": "129/2",
+        "khata_number": "DEMO-KH-029",
+        "area_hectares": "1.250",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-030",
+      "filename": "BHUSATYA_REF_030_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_030_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "area_discrepancy",
+      "anomaly_labels": [
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0030",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 30",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 30",
+        "survey_number": "130/3",
+        "khata_number": "DEMO-KH-030",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0030",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 30",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 30",
+        "survey_number": "130/3",
+        "khata_number": "DEMO-KH-030",
+        "area_hectares": "1.400",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-031",
+      "filename": "BHUSATYA_REF_031_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_031_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "missing_incomplete_fields",
+      "anomaly_labels": [
+        "missing_or_incomplete_field"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0031",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 31",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 31",
+        "survey_number": "131/4",
+        "khata_number": "DEMO-KH-031",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0031",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 31",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 31",
+        "survey_number": "131/4",
+        "khata_number": "NOT PROVIDED",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-032",
+      "filename": "BHUSATYA_REF_032_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_032_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "missing_incomplete_fields",
+      "anomaly_labels": [
+        "missing_or_incomplete_field"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0032",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 32",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 32",
+        "survey_number": "132/1",
+        "khata_number": "DEMO-KH-032",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0032",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 32",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 32",
+        "survey_number": "132/1",
+        "khata_number": "NOT PROVIDED",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-033",
+      "filename": "BHUSATYA_REF_033_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_033_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "missing_incomplete_fields",
+      "anomaly_labels": [
+        "missing_or_incomplete_field"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0033",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 33",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 33",
+        "survey_number": "133/2",
+        "khata_number": "DEMO-KH-033",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0033",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 33",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 33",
+        "survey_number": "133/2",
+        "khata_number": "NOT PROVIDED",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-034",
+      "filename": "BHUSATYA_REF_034_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_034_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "missing_incomplete_fields",
+      "anomaly_labels": [
+        "missing_or_incomplete_field"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0034",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 34",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 34",
+        "survey_number": "134/3",
+        "khata_number": "DEMO-KH-034",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0034",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 34",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 34",
+        "survey_number": "134/3",
+        "khata_number": "NOT PROVIDED",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-035",
+      "filename": "BHUSATYA_REF_035_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_035_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "missing_incomplete_fields",
+      "anomaly_labels": [
+        "missing_or_incomplete_field"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0035",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 35",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 35",
+        "survey_number": "135/4",
+        "khata_number": "DEMO-KH-035",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0035",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 35",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 35",
+        "survey_number": "135/4",
+        "khata_number": "NOT PROVIDED",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-036",
+      "filename": "BHUSATYA_REF_036_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_036_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "metadata_image_indicators",
+      "anomaly_labels": [
+        "synthetic_metadata_or_image_indicator"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0036",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 36",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 36",
+        "survey_number": "136/1",
+        "khata_number": "DEMO-KH-036",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0036",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 36",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 36",
+        "survey_number": "136/1",
+        "khata_number": "DEMO-KH-036",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-037",
+      "filename": "BHUSATYA_REF_037_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_037_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "metadata_image_indicators",
+      "anomaly_labels": [
+        "synthetic_metadata_or_image_indicator"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0037",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 37",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 37",
+        "survey_number": "137/2",
+        "khata_number": "DEMO-KH-037",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0037",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 37",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 37",
+        "survey_number": "137/2",
+        "khata_number": "DEMO-KH-037",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-038",
+      "filename": "BHUSATYA_REF_038_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_038_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "metadata_image_indicators",
+      "anomaly_labels": [
+        "synthetic_metadata_or_image_indicator"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0038",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 38",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 38",
+        "survey_number": "138/3",
+        "khata_number": "DEMO-KH-038",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0038",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 38",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 38",
+        "survey_number": "138/3",
+        "khata_number": "DEMO-KH-038",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-039",
+      "filename": "BHUSATYA_REF_039_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_039_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "metadata_image_indicators",
+      "anomaly_labels": [
+        "synthetic_metadata_or_image_indicator"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0039",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 39",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 39",
+        "survey_number": "139/4",
+        "khata_number": "DEMO-KH-039",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0039",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 39",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 39",
+        "survey_number": "139/4",
+        "khata_number": "DEMO-KH-039",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-040",
+      "filename": "BHUSATYA_REF_040_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_040_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "metadata_image_indicators",
+      "anomaly_labels": [
+        "synthetic_metadata_or_image_indicator"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0040",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 40",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 40",
+        "survey_number": "140/1",
+        "khata_number": "DEMO-KH-040",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0040",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 40",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 40",
+        "survey_number": "140/1",
+        "khata_number": "DEMO-KH-040",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-041",
+      "filename": "BHUSATYA_REF_041_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_041_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0041",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 41",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 41",
+        "survey_number": "141/2",
+        "khata_number": "DEMO-KH-041",
+        "area_hectares": "0.125",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0041",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 41",
+        "district": "Indore",
+        "tehsil": "Sanwer",
+        "village": "Demo Village 41",
+        "survey_number": "141/4",
+        "khata_number": "DEMO-KH-041",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-042",
+      "filename": "BHUSATYA_REF_042_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_042_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0042",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 42",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 42",
+        "survey_number": "142/3",
+        "khata_number": "DEMO-KH-042",
+        "area_hectares": "0.250",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0042",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 42",
+        "district": "Bhopal",
+        "tehsil": "Huzur",
+        "village": "Demo Village 42",
+        "survey_number": "142/1",
+        "khata_number": "DEMO-KH-042",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-043",
+      "filename": "BHUSATYA_REF_043_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_043_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0043",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 43",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 43",
+        "survey_number": "143/4",
+        "khata_number": "DEMO-KH-043",
+        "area_hectares": "0.450",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0043",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 43",
+        "district": "Jabalpur",
+        "tehsil": "Patan",
+        "village": "Demo Village 43",
+        "survey_number": "143/2",
+        "khata_number": "DEMO-KH-043",
+        "area_hectares": "1.075",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-044",
+      "filename": "BHUSATYA_REF_044_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_044_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0044",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 44",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 44",
+        "survey_number": "144/1",
+        "khata_number": "DEMO-KH-044",
+        "area_hectares": "0.750",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0044",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 44",
+        "district": "Ujjain",
+        "tehsil": "Tarana",
+        "village": "Demo Village 44",
+        "survey_number": "144/3",
+        "khata_number": "DEMO-KH-044",
+        "area_hectares": "1.375",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-045",
+      "filename": "BHUSATYA_REF_045_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_045_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0045",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 45",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 45",
+        "survey_number": "145/2",
+        "khata_number": "DEMO-KH-045",
+        "area_hectares": "1.200",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0045",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 45",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Demo Village 45",
+        "survey_number": "145/4",
+        "khata_number": "DEMO-KH-045",
+        "area_hectares": "1.825",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-046",
+      "filename": "BHUSATYA_REF_046_sale_deed.pdf",
+      "relative_path": "documents/BHUSATYA_REF_046_sale_deed.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0046",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 46",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 46",
+        "survey_number": "146/3",
+        "khata_number": "DEMO-KH-046",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0046",
+        "document_type": "SALE_DEED",
+        "owner_name": "SYNTHETIC PERSON 46",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Demo Village 46",
+        "survey_number": "146/1",
+        "khata_number": "DEMO-KH-046",
+        "area_hectares": "2.125",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-047",
+      "filename": "BHUSATYA_REF_047_khasra.pdf",
+      "relative_path": "documents/BHUSATYA_REF_047_khasra.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0047",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 47",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 47",
+        "survey_number": "147/4",
+        "khata_number": "DEMO-KH-047",
+        "area_hectares": "2.000",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0047",
+        "document_type": "KHASRA",
+        "owner_name": "SYNTHETIC PERSON 47",
+        "district": "Mandsaur",
+        "tehsil": "Suwasra",
+        "village": "Demo Village 47",
+        "survey_number": "147/2",
+        "khata_number": "DEMO-KH-047",
+        "area_hectares": "2.625",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-048",
+      "filename": "BHUSATYA_REF_048_b1_record.pdf",
+      "relative_path": "documents/BHUSATYA_REF_048_b1_record.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0048",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 48",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 48",
+        "survey_number": "148/1",
+        "khata_number": "DEMO-KH-048",
+        "area_hectares": "3.400",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0048",
+        "document_type": "B1_RECORD",
+        "owner_name": "SYNTHETIC PERSON 48",
+        "district": "Ratlam",
+        "tehsil": "Jaora",
+        "village": "Demo Village 48",
+        "survey_number": "148/3",
+        "khata_number": "DEMO-KH-048",
+        "area_hectares": "4.025",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-049",
+      "filename": "BHUSATYA_REF_049_khatauni.pdf",
+      "relative_path": "documents/BHUSATYA_REF_049_khatauni.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0049",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 49",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 49",
+        "survey_number": "149/2",
+        "khata_number": "DEMO-KH-049",
+        "area_hectares": "0.875",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0049",
+        "document_type": "KHATAUNI",
+        "owner_name": "SYNTHETIC PERSON 49",
+        "district": "Vidisha",
+        "tehsil": "Basoda",
+        "village": "Demo Village 49",
+        "survey_number": "149/4",
+        "khata_number": "DEMO-KH-049",
+        "area_hectares": "1.500",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    },
+    {
+      "reference_id": "BHUSATYA-REF-050",
+      "filename": "BHUSATYA_REF_050_power_of_attorney.pdf",
+      "relative_path": "documents/BHUSATYA_REF_050_power_of_attorney.pdf",
+      "source_type": "synthetic_demo",
+      "source_label": "SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD",
+      "category": "mixed_anomalies",
+      "anomaly_labels": [
+        "cross_field_mismatch",
+        "area_discrepancy"
+      ],
+      "canonical_fields": {
+        "registration_number": "DEMO-MP-2026-0050",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 50",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 50",
+        "survey_number": "150/3",
+        "khata_number": "DEMO-KH-050",
+        "area_hectares": "1.025",
+        "record_year": 2026
+      },
+      "document_fields": {
+        "registration_number": "DEMO-MP-2026-0050",
+        "document_type": "POWER_OF_ATTORNEY",
+        "owner_name": "SYNTHETIC PERSON 50",
+        "district": "Sagar",
+        "tehsil": "Rahatgarh",
+        "village": "Demo Village 50",
+        "survey_number": "150/1",
+        "khata_number": "DEMO-KH-050",
+        "area_hectares": "1.650",
+        "record_year": 2026
+      },
+      "is_synthetic": true
+    }
+  ]
+}

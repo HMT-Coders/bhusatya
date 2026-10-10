@@ -35,3 +35,17 @@ CREATE TABLE IF NOT EXISTS risk_categories (
  concern_score NUMERIC(5,2), reason_unavailable TEXT, evidence JSONB NOT NULL DEFAULT '{}',
  UNIQUE(verification_id, category_code)
 );
+
+
+-- Reference catalogue for the 50-document synthetic benchmark. Never insert real records here without a lawful, authorized source.
+CREATE TABLE IF NOT EXISTS reference_documents (
+ id UUID PRIMARY KEY DEFAULT gen_random_uuid(), reference_id TEXT NOT NULL UNIQUE,
+ filename TEXT NOT NULL, storage_key TEXT NOT NULL, document_type TEXT NOT NULL,
+ anomaly_category TEXT NOT NULL, anomaly_labels JSONB NOT NULL DEFAULT '[]',
+ canonical_fields JSONB NOT NULL, document_fields JSONB NOT NULL,
+ source_label TEXT NOT NULL DEFAULT 'SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD',
+ is_synthetic BOOLEAN NOT NULL DEFAULT TRUE CHECK(is_synthetic=TRUE),
+ created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS idx_registry_survey ON registry_records(survey_number);
+CREATE INDEX IF NOT EXISTS idx_registry_registration ON registry_records(registration_number);

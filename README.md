@@ -119,3 +119,9 @@ Acceptance: reproducible demo; all claims match implemented functionality; legal
 - The portal is a reference only. No official API, direct government database access, scraping, or government endorsement is claimed. Live record comparison must only be added through a documented and authorized data interface.
 - Hindi (`hi`) is the default display language. Users can switch the UI to English, Marathi, Gujarati, Punjabi, Bengali, Tamil, Telugu, Kannada, Malayalam, Odia, or Urdu. The choice is saved in the browser for the next visit. The current prototype localizes the core navigation and common actions; technical findings returned by the backend may remain in the source language.
 - Urdu uses right-to-left page direction. OCR is independent from UI language; Hindi OCR requires Tesseract's Hindi language data.
+
+
+## 50-document synthetic reference matching (hackathon update)
+The backend now bundles 50 generated synthetic PDFs and canonical reference fields under `backend/reference_dataset/`. Every PDF is visibly watermarked as synthetic and not a government record. Upload analysis attempts to match extracted identifiers to this local catalogue and returns field-by-field comparisons. This is a demo matching workflow only; no official MP Bhulekh integration is implemented. See `docs/synthetic-reference-dataset.md`.
+
+To load the optional PostgreSQL catalogue, run `database/schema.sql`, then `database/seed_50_synthetic_documents.sql`. The running Flask API currently loads the JSON catalogue from the project files, so the benchmark matching works without PostgreSQL.

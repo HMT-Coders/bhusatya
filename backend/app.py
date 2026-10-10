@@ -51,6 +51,13 @@ DEMO_CASES = {
  }
 }
 documents, verifications = {}, {}
+DATASET_DIR = Path(__file__).resolve().parent / "reference_dataset"
+CATALOG_PATH = DATASET_DIR / "catalog.json"
+try:
+    REFERENCE_CATALOG = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))["records"]
+except Exception:
+    REFERENCE_CATALOG = []
+
 
 def err(code, message, status):
     return jsonify({"error":{"code":code,"message":message}}), status
@@ -154,6 +161,7 @@ def extract_text_from_file(path, ext):
 def analyze_uploaded(doc):
     path = Path(doc["path"])
     text, method, page_count, unavailable_reason = extract_text_from_file(path, doc["ext"])
+    reference_match = match_reference_document(text) if text.strip() else {"status":"NO_IDENTIFIERS_EXTRACTED", "source_label":"SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD", "message":"No text available for matching.", "extracted_fields":{}, "candidate":None, "field_comparison":[]}
     # This generic uploaded-file pipeline deliberately does not pretend to have expert forensic detectors.
     findings = []
     if not text.strip():
@@ -175,6 +183,13 @@ def analyze_uploaded(doc):
               "severity":"HIGH","description":"Multiple area values were extracted; these may refer to different parcels or contexts.",
               "evidence":{"candidate_values":list(dict.fromkeys(area_vals))},"page_numbers":[],"confidence":None,
               "recommended_action":"Check the field context and original record; OCR matches alone do not prove a discrepancy."})
+    # Surface comparisons against the selected synthetic canonical record as explicit evidence.
+    for comparison in reference_match.get("field_comparison", []):
+        if comparison.get("status") == "MISMATCH":
+            findings.append({"finding_id":str(uuid.uuid4()),"category":"REGISTRY_RECONCILIATION","title":f"{comparison['field'].replace('_',' ').title()} differs from synthetic reference",
+              "severity":"HIGH","description":"An extracted value differs from the canonical value in the matched synthetic benchmark record.",
+              "evidence":{"uploaded_value":comparison.get("uploaded_value"),"synthetic_reference_value":comparison.get("reference_value"),"reference_id":(reference_match.get("candidate") or {}).get("reference_id"),"source_label":reference_match.get("source_label")},
+              "page_numbers":[],"confidence":None,"recommended_action":"Review the displayed pages and values. This is a synthetic benchmark comparison, not an official-record verification."})
     # Uploaded analysis has no calibrated forensic detectors; unavailable checks must not count as zero risk.
     available = {"OCR_CHARACTER_CONFIDENCE": bool(text.strip()), "CROSS_FIELD_CONSISTENCY": bool(text.strip())}
     scores = {"OCR_CHARACTER_CONFIDENCE": 45 if text.strip() else None,
@@ -196,12 +211,60 @@ def analyze_uploaded(doc):
       "document_title":doc["filename"],"risk_score":score,"risk_level":band,
       "coverage_weight_percent":round(denom,1),"findings":findings,"findings_count":len(findings),
       "categories":category_results,"unavailable_categories":unavailable,
-      "fields":{"extraction_method":method,"extracted_text_preview":text[:3000]},
-      "pages":[],"registry_match":None,"registry_source_label":SOURCE_LABEL,"sha256":doc["sha256"],
+      "fields":{"extraction_method":method,"extracted_text_preview":text[:3000],"extracted_identifiers":reference_match.get("extracted_fields",{})},
+      "pages":[],"registry_match":reference_match,"registry_source_label":SOURCE_LABEL,"sha256":doc["sha256"],
       "disclaimer":"AI-generated screening result. This assessment is not legal certification, proof of ownership, or a substitute for verification with the competent authority.",
       "disclaimer_hi":"एआई-जनरेटेड स्क्रीनिंग परिणाम। यह मूल्यांकन कानूनी प्रमाणन, स्वामित्व का प्रमाण या सक्षम प्राधिकारी के सत्यापन का विकल्प नहीं है。",
       "notes":["Uploaded-document analysis has limited text heuristics only; no expert image, stamp or signature detector is enabled.",
                "A missing check is unavailable, not a zero-risk result. Do not interpret this score as a probability of forgery."]}
+
+def extract_document_fields(text):
+    """Conservative field extraction for demo PDFs/text; OCR output may be imperfect."""
+    patterns = {
+      "registration_number": r"(?:Registration\s*/\s*Reference\s*ID|Registration\s*(?:No\.?|Number)|Reference\s*ID)\s*[:#-]?\s*(DEMO-MP-2026-\d{4})",
+      "survey_number": r"(?:Survey\s*/\s*Khasra\s*number|Survey\s*(?:No\.?|Number)|Khasra\s*(?:No\.?|Number))\s*[:#-]?\s*([0-9]+\s*/\s*[0-9]+)",
+      "area_hectares": r"(?:Land\s*area\s*\(hectares\)|Area\s*\(Ha\)|Area)\s*[:#-]?\s*([0-9]+(?:\.[0-9]+)?)",
+      "district": r"District\s*[:#-]?\s*([A-Za-z ]+)",
+      "village": r"Village\s*[:#-]?\s*(Demo Village\s*\d{2}|Demo Kolar Village|[A-Za-z ]+)",
+      "khata_number": r"Khata\s*number\s*[:#-]?\s*(DEMO-KH-\d{3}|DEMO-KH-[A-Z0-9-]+|NOT PROVIDED)"
+    }
+    result = {}
+    for key, pattern in patterns.items():
+        match = re.search(pattern, text, flags=re.I)
+        if match:
+            value = re.sub(r"\s+", "", match.group(1)) if key == "survey_number" else match.group(1).strip()
+            result[key] = value
+    return result
+
+def match_reference_document(text):
+    """Match upload against bundled synthetic reference catalogue, never an official source."""
+    extracted = extract_document_fields(text)
+    if not extracted:
+        return {"status":"NO_IDENTIFIERS_EXTRACTED", "source_label":"SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD", "message":"No supported identifiers could be extracted. Enter details manually or upload a clearer document.", "extracted_fields":{}, "candidate":None, "field_comparison":[]}
+    candidates = []
+    for record in REFERENCE_CATALOG:
+        canonical = record.get("canonical_fields", {})
+        score, matched = 0, []
+        for key, weight in (("registration_number", 60), ("survey_number", 25), ("district", 5), ("village", 5), ("khata_number", 5)):
+            got, expected = extracted.get(key), canonical.get(key)
+            if got and expected and normalized(got) == normalized(expected):
+                score += weight; matched.append(key)
+        if score:
+            candidates.append((score, len(matched), record))
+    if not candidates:
+        return {"status":"NO_MATCH_FOUND", "source_label":"SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD", "message":"No corresponding record was found in the 50-document synthetic benchmark. This does not imply the upload is fake.", "extracted_fields":extracted, "candidate":None, "field_comparison":[]}
+    candidates.sort(key=lambda item:(item[0],item[1]), reverse=True)
+    score, _, record = candidates[0]
+    canonical = record["canonical_fields"]
+    compare_keys = ["registration_number", "survey_number", "area_hectares", "district", "village", "khata_number", "owner_name", "document_type"]
+    comparisons=[]
+    for key in compare_keys:
+        observed = extracted.get(key)
+        expected = canonical.get(key)
+        if observed is not None and expected is not None:
+            same = normalized(observed) == normalized(expected)
+            comparisons.append({"field":key,"uploaded_value":observed,"reference_value":expected,"status":"MATCH" if same else "MISMATCH"})
+    return {"status":"MATCH_FOUND", "source_label":"SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD", "match_score":score, "matched_identifiers": [k for k in extracted if k in canonical and normalized(extracted[k])==normalized(canonical[k])], "extracted_fields":extracted, "candidate":{"reference_id":record["reference_id"],"filename":record["filename"],"document_type":canonical.get("document_type"),"district":canonical.get("district"),"survey_number":canonical.get("survey_number"),"category":record.get("category"),"anomaly_labels":record.get("anomaly_labels",[])}, "field_comparison":comparisons, "interpretation":"This is a match against a fictional benchmark record only; it is not official verification or proof of authenticity."}
 
 @app.errorhandler(413)
 def too_large(_):
@@ -262,12 +325,28 @@ def get_report(verification_id):
 @app.get("/api/v1/registry/search")
 def registry_search():
     q = request.args.get("q","").lower()
-    rows = [
-      {"registration_number":"DEMO-IND-001","owner_name":"SYNTHETIC OWNER A","survey_number":"88/2","district":"Indore","area_hectares":0.750},
-      {"registration_number":"DEMO-BPL-002","owner_name":"SYNTHETIC OWNER B","survey_number":"142/1","district":"Bhopal","area_hectares":1.200},
-      {"registration_number":"DEMO-JBP-003","owner_name":"SYNTHETIC OWNER C","survey_number":"51/4","district":"Jabalpur","area_hectares":0.450},
-    ]
-    return jsonify({"source_label":SOURCE_LABEL,"records":[r for r in rows if not q or q in json.dumps(r).lower()]})
+    rows = []
+    for item in REFERENCE_CATALOG:
+        f = item["canonical_fields"]
+        rows.append({"reference_id":item["reference_id"],"registration_number":f["registration_number"],"owner_name":f["owner_name"],"survey_number":f["survey_number"],"district":f["district"],"tehsil":f["tehsil"],"village":f["village"],"area_hectares":float(f["area_hectares"]),"document_type":f["document_type"],"category":item["category"],"source_label":item["source_label"],"is_synthetic":True})
+    return jsonify({"source_label":"SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD","total":len(rows),"records":[r for r in rows if not q or q in json.dumps(r).lower()]})
+
+@app.get("/api/v1/reference-documents")
+def reference_documents():
+    q = request.args.get("q", "").lower()
+    rows = []
+    for item in REFERENCE_CATALOG:
+        f = item["canonical_fields"]
+        row = {"reference_id":item["reference_id"],"filename":item["filename"],"document_type":f["document_type"],"district":f["district"],"tehsil":f["tehsil"],"village":f["village"],"survey_number":f["survey_number"],"category":item["category"],"source_label":item["source_label"],"is_synthetic":True}
+        if not q or q in json.dumps(row).lower(): rows.append(row)
+    return jsonify({"source_label":"SYNTHETIC DEMO DATA — NOT A GOVERNMENT RECORD","total":len(rows),"records":rows})
+
+@app.get("/api/v1/reference-documents/<reference_id>/download")
+def download_reference_document(reference_id):
+    from flask import send_from_directory
+    item = next((r for r in REFERENCE_CATALOG if r["reference_id"] == reference_id), None)
+    if not item: return err("REFERENCE_NOT_FOUND", "Synthetic reference document not found.", 404)
+    return send_from_directory(str(DATASET_DIR / "documents"), item["filename"], as_attachment=True, download_name=item["filename"])
 
 @app.post("/api/v1/demo-cases/<case_id>/analyze")
 def analyze_demo_case(case_id):
